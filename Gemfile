@@ -45,6 +45,7 @@ end
 
 gem 'activeadmin', '~> 1.3'
 gem 'activeadmin_addons'
+gem 'aws-sdk-s3'
 gem 'devise', '~> 4.4'
 gem 'haml', '~> 5.0'
 gem 'meta-tags', '~> 2.10'
