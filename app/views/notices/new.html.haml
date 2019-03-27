@@ -1,0 +1,11 @@
+%section.section
+  .container
+    %h1.title New notice
+    = simple_form_for @notice do |f|
+      = f.input :notice_type, as: :radio_buttons, collection: %i[notice event ask intro], include_blank: false, label: false
+      = f.input :message, as: :text
+      = f.input :location
+      = f.input :contact
+      = f.input :event_time
+      = f.input :image, as: :file
+      = f.button :submit

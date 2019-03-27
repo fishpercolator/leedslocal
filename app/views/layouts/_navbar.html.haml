@@ -6,6 +6,8 @@
       - 3.times do
         %span{aria_hidden: true}
   .navbar-menu{data: {target: 'navbar.menu'}}
+    .navbar-start
+      = link_to 'New', new_notice_path, class: 'navbar-item'
     .navbar-end
       - if user_signed_in?
         - if current_user.role_admin?
