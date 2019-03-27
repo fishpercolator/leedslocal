@@ -7,7 +7,7 @@
       = f.input :message, as: :text
       = f.input :location, wrapper_html: {data: {target: 'new-notice.location'}}
       = f.input :contact, wrapper_html: {data: {target: 'new-notice.contact'}}
-      = f.input :event_time, wrapper_html: {data: {target: 'new-notice.time'}}
+      = f.input :event_time, as: :string, wrapper_html: {data: {target: 'new-notice.time'}}, input_html: {data: {target: 'new-notice.datefield'}}
       = f.input :image, as: :file, wrapper_html: {data: {target: 'new-notice.image'}}
       .actions
         = f.button :submit

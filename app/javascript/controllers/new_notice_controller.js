@@ -1,7 +1,8 @@
 import { Controller } from "stimulus"
+import flatpickr from 'flatpickr'
 
 export default class extends Controller {
-  static targets = [ 'location', 'contact', 'time', 'image', 'geo' ]
+  static targets = [ 'location', 'contact', 'time', 'image', 'geo', 'datefield' ]
 
   changed(event) {
     switch (event.target.value) {
@@ -32,6 +33,8 @@ export default class extends Controller {
   }
 
   initialize() {
+    flatpickr(this.datefieldTarget, {enableTime: true})
+    
     // Just for show for now
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(pos => {
