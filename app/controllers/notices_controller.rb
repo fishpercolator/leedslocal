@@ -1,5 +1,6 @@
 class NoticesController < ApplicationController
   skip_after_action :verify_authorized
+  before_action :authenticate_user!
   
   def new
     @notice = Notice.new(notice_type: :notice)
