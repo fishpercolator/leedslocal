@@ -25,11 +25,12 @@ $date: hsl(195, 100%, 40%);
 
 // Import your own styles here
 #notices {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin: 0 auto;
   .card {
-    max-width: 30rem;
     text-align: center;
-    margin: 1rem;
+    width: 450px;
+    margin-bottom: 20px;
     p {
       margin: 0.5rem 0;
     }

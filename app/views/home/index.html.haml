@@ -1,4 +1,4 @@
 %section.section
-  .container#notices
+  #notices{data: {controller: 'notices', target: 'notices.grid'}}
     - @notices.each do |n|
       = render n.notice_type, notice: n
