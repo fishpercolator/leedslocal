@@ -1,0 +1,6 @@
+.card.event
+  .card-content
+    %p= notice.message
+    %p.date= notice.event_time.strftime('%A %-d %b, %I:%M%P')
+    %p.location= notice.location
+    %p.contact= notice.contact    

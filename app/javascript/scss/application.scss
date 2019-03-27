@@ -1,21 +1,60 @@
 // Config goes here
 $primary: hsl(195, 100%, 30%);
+$date: hsl(195, 100%, 40%);
 
-// Add the pieces of Bulma that your project uses here
-@import "~bulma/sass/utilities/_all";
-@import "~bulma/sass/base/_all";
+@import "~bulma/bulma";
 
-@import "~bulma/sass/components/message";
-@import "~bulma/sass/components/navbar";
-
-@import "~bulma/sass/elements/box";
-@import "~bulma/sass/elements/button";
-@import "~bulma/sass/elements/form";
-@import "~bulma/sass/elements/notification";
-@import "~bulma/sass/elements/other";
-@import "~bulma/sass/elements/title";
-
-@import "~bulma/sass/layout/hero";
-@import "~bulma/sass/layout/section";
+// // Add the pieces of Bulma that your project uses here
+// @import "~bulma/sass/utilities/_all";
+// @import "~bulma/sass/base/_all";
+// 
+// @import "~bulma/sass/components/card";
+// @import "~bulma/sass/components/message";
+// @import "~bulma/sass/components/navbar";
+// 
+// @import "~bulma/sass/elements/box";
+// @import "~bulma/sass/elements/button";
+// @import "~bulma/sass/elements/form";
+// @import "~bulma/sass/elements/image";
+// @import "~bulma/sass/elements/notification";
+// @import "~bulma/sass/elements/other";
+// @import "~bulma/sass/elements/title";
+// 
+// @import "~bulma/sass/layout/hero";
+// @import "~bulma/sass/layout/section";
 
 // Import your own styles here
+#notices {
+  font-size: 2rem;
+  .card {
+    max-width: 30rem;
+    text-align: center;
+    margin: 1rem;
+    p {
+      margin: 0.5rem 0;
+    }
+    .date {
+      color: $date;
+    }
+    .location {
+      color: $primary;
+      font-weight: bold;
+    }
+    .contact {
+      color: $grey;
+      font-style: italic;
+    }
+  }
+  .card.intro .card-content {
+    display: flex;
+    align-items: center;
+    figure {
+      flex-shrink: 0;
+    }
+    p {
+      flex-shrink: 1;
+      text-align: left;
+      margin-left: 0.5rem;
+    }
+  }
+}
