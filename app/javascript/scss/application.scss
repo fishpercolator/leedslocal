@@ -34,6 +34,9 @@ $date: hsl(195, 100%, 40%);
     p {
       margin: 0.5rem 0;
     }
+    .location, .contact {
+      font-size: 1.5rem;
+    }
     .date {
       color: $date;
     }
