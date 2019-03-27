@@ -62,3 +62,21 @@ $date: hsl(195, 100%, 40%);
     }
   }
 }
+
+#new_notice {
+  .input {
+    margin-bottom: 0.5rem;
+  }
+  .radio input {
+    margin-right: 0.5rem;
+  }
+  .radio {
+    margin-right: 2rem;
+  }
+  .actions {
+    margin-top: 1rem;
+  }
+  #notice_image {
+    margin-left: 1rem;
+  }
+}
